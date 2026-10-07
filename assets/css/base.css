@@ -1,0 +1,91 @@
+@font-face {
+    font-family:'font1';
+    src: url('../font/InstagramSans.ttf');
+}
+@font-face {
+    font-family:'font1';
+    src: url('../font/InstagramSanLight.ttf');
+    font-weight:lighter;
+}
+@font-face {
+    font-family:'font1';
+    src: url('../font/InstagramSansBold.ttf');
+    font-weight:bold;
+}
+@font-face {
+    font-family:'font1';
+    src: url('../font/InstagramSansMedium.ttf');
+    font-weight:400;
+}
+@font-face {
+    font-family:'font1';
+    src: url('../font/InstagramSansHeadline.otf');
+    font-weight:bolder;
+}
+:root{
+    --bg:#fff;
+    --fg:#000;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'font1';
+}
+body, html{
+    width:100%;
+    min-height:100vh;
+}
+body{
+    background-color:var(--bg);
+    color:var(--fg);
+    font-family:'font1';
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    text-rendering:optimizeLegibility;
+    overflow-x:hidden;
+}
+input{
+    border:none;
+    border-radius:5px;
+    outline:none;
+    padding:5px;
+}
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 50px;
+    line-height:40px;
+}
+header > h1{
+    font-weight:'bold';
+}
+header input{
+    width:100%;
+    background-color:rgb(235, 235, 235);
+    font-size:16px;
+    padding-left:30px;
+}
+header > div{
+    position: relative;
+    width:50%;
+}
+header .searchIcon{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    left:10px;
+    color:rgb(97, 97, 97);
+}
+main{
+    width:70%;
+    min-height:80vh;
+    margin:10px auto;
+}
+
+@media (max-width: 700px){
+    main{
+        width:100%;
+    }
+}

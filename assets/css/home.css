@@ -1,0 +1,45 @@
+section.story{
+    display:flex;
+    gap:10px;
+    width:100%;
+}
+section.story > .swiper-wrapper > div{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:5px;
+    padding:10px;
+}
+@keyframes rotateAnimation{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+section.story .storyImage{
+    display:flex;
+    flex-direction:column;
+    width:75px;
+    background: linear-gradient(
+        to right,
+        #833ab4,#fd1d1d,#fcb045
+    );
+    border-radius:50%;
+    padding:3px;
+}
+section.story .storyImage:hover{
+    animation: rotateAnimation 2s linear infinite;
+}
+section.story .storyImage:hover > img{
+    animation: rotateAnimation 2s linear infinite reverse;
+}
+section.story img{
+    position: relative;
+    aspect-ratio:1;
+    border-radius:50%;
+    border:3px solid #fff;
+    object-fit:cover;
+    background:#fff;
+}

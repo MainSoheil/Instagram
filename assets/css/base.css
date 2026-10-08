@@ -85,6 +85,12 @@ main{
 }
 
 @media (max-width: 700px){
+    header{
+        padding:10px;
+    }
+    header input, header .searchIcon{
+        display:none;
+    }
     main{
         width:100%;
     }

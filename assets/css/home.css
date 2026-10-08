@@ -1,4 +1,9 @@
+/* Story Part */
+
 section.story{
+    position:sticky;
+    top:0;
+    background-color:#fff;
     display:flex;
     gap:10px;
     width:100%;
@@ -42,4 +47,73 @@ section.story img{
     border:3px solid #fff;
     object-fit:cover;
     background:#fff;
+}
+
+/* Posts Part */
+.posts{
+    display:flex;
+    flex-direction:column;
+    /* background-color: #fcb045; */
+    padding:20px 0;
+}
+.posts > div{
+    width:95%;
+    max-width:600px;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    /* background-color: #833ab4; */
+    padding:10px;
+}
+
+.posts > div > div.first{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.posts > div > div.first > img{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    aspect-ratio:1;
+    object-fit:cover;
+}
+.posts > div > div.first > svg{
+    margin-left:auto;
+}
+.posts > div > img{
+    border-radius:5px;
+    margin:15px 0;
+}
+
+.posts > div > div.icon{
+    display:flex;
+    gap:10px;
+    margin-bottom:10px;
+    align-items:center;
+}
+.posts > div > div.icon > img{
+    width:18px;
+}
+.posts > div > div.icon > img:last-child{
+    margin-left:auto;
+}
+
+.posts > div > span{
+    display:flex;
+    align-items:center;
+}
+.posts > div > span > img{
+    width:25px;
+    border-radius:50%;
+    aspect-ratio:1;
+    object-fit:cover;
+    border:1px solid #fff;
+}
+.posts > div > span > img:not(:first-child){
+    margin-left:-10px;
+}
+.posts .gray{
+    color:#737373;
 }
